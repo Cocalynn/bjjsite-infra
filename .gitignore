@@ -1,0 +1,38 @@
+# -------------------------
+# OS & editors
+# -------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+*.bak
+
+# -------------------------
+# Local env / secrets
+# -------------------------
+.env
+.env.*
+.envrc
+
+# -------------------------
+# Terraform
+# -------------------------
+.terraform/
+**/.terraform/**
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.backup
+crash.log
+crash.*.log
+*.tfplan                  # plan files
+*.tfvars                  # usually hold secrets — ignore by default
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Keep the dependency lockfile in Git (important for provider pinning)
+# (We’re NOT ignoring .terraform.lock.hcl)
